@@ -1,5 +1,5 @@
 :root {
-  --red:#fd7274;
+  --red: #fd7274;
   --lightest-green: #dcf8c6;
   --light-green: #25d366;
   --green: #1ebea5;
@@ -7,9 +7,9 @@
   --blue: #34b7f1;
   --light-accent: #ece5dd;
   --white: #fff;
-  --dark-grey:#273443;
-  --light-grey:#27344367;
-  --darkest-grey:#232F3C;
+  --dark-grey: #273443;
+  --light-grey: #27344367;
+  --darkest-grey: #232f3c;
   --nav-height: 8rem;
   --font: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -53,7 +53,6 @@ label {
   font-size: 1.6rem;
   line-height: 3.5rem;
 }
-
 
 .nav-bar {
   padding: 0 10%;
@@ -100,11 +99,11 @@ label {
 .message-form {
   flex: 1;
   padding: 8vh 10%;
-  color:var(--dark-grey);
+  color: var(--dark-grey);
 }
 
-.message-form #error{
-  color:var(--red);
+.message-form #error {
+  color: var(--red);
   font-weight: 500;
 }
 
@@ -118,47 +117,55 @@ label {
   margin: 1rem 0;
   border: none;
   background-color: var(--light-green);
-  transition: .5s;
-  transition-property: transform ;
+  transition: 0.5s;
+  transition-property: transform;
 }
-.message-btn:focus{
+.message-btn:focus {
   outline: none;
 }
-.message-btn:active{
-  transform: translateY(.5rem);
+.message-btn:active {
+  transform: translateY(0.5rem);
 }
 
 .message-box {
-  width: 400px;
-  border: 1px solid #CACACA;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid #cacaca;
   border-radius: 5px;
   padding: 1.8rem;
-  height: 200px;
+  height: 20rem;
   font-size: 1.6rem;
   margin-bottom: 2.5rem;
   resize: none;
 }
 .message-box:focus {
   outline: none;
-  transition: box-shadow ease .25s, border-color ease .25s;
+  transition: box-shadow ease 0.25s, border-color ease 0.25s;
 }
 #message-box-label {
   margin-top: 5rem;
 }
-.form-control:focus, .selected-flag.open:before,.selected-flag:focus:before,.message-box:focus {
-  border:none !important;
+.form-control {
+  width: 100% !important;
+}
+.form-control:focus,
+.selected-flag.open:before,
+.selected-flag:focus:before,
+.message-box:focus {
+  border: none !important;
   box-shadow: 0 0 0 0.2rem var(--light-grey) !important;
 }
 
-
-footer{
+footer {
   background-color: var(--darkest-grey);
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--white);
 }
-footer a{
+footer a {
   color: var(--green);
 }
 
@@ -176,12 +183,14 @@ footer a{
   }
 }
 
-
 @media only screen and (max-width: 680px) {
-  .form-control{
-    width: 100% !important;
+  .form-control {
+    height: 2rem !important;
   }
-  .message-box{
-    width: 90%;
+}
+
+@media only screen and (max-width: 400px) {
+  html {
+    font-size: 2.5vw;
   }
 }
