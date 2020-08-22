@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import NavBar from './Components/NavBar'
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/material.css';
 
@@ -20,6 +21,7 @@ function App() {
 
     return (
         <div>
+            <NavBar/>
             <h1>Hello</h1>
             {error && <p>{error}</p>}
             <PhoneInput

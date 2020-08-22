@@ -1,13 +1,24 @@
-:root{
-    --lightest-green:#DCF8C6;
-    --light-green:#25D366;
-    --green:#1EBEA5;
-    --dark-green:#075E54;
-    --blue:#34B7F1;
-    --light-accent:#ECE5DD;
+:root {
+  --lightest-green: #dcf8c6;
+  --light-green: #25d366;
+  --green: #1ebea5;
+  --dark-green: #075e54;
+  --blue: #34b7f1;
+  --light-accent: #ece5dd;
+}
+body {
+  font-size: 10px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-size: 600px 1102px;
+  background-image: url("./img/whatsapp_background.webp");
 }
 
-body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image:url('./img/whatsapp_background.webp')
+.nav-bar {
+  width: 100%;
+  min-width: 5vh;
+  height: 5rem;
+  background-color: var(--green);
 }
