@@ -9,7 +9,8 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-phone-input-2": "^2.13.7",
-    "react-scripts": "3.4.3"
+    "react-scripts": "3.4.3",
+    "urlencode": "^1.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
