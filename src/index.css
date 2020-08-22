@@ -55,6 +55,7 @@ label {
 }
 
 .nav-bar {
+  position: sticky;
   padding: 0 10%;
   height: var(--nav-height);
   background-color: var(--green);
@@ -91,14 +92,23 @@ label {
 .description {
   flex: 1;
   background-color: var(--dark-grey);
-
-  padding: 8vh 10%;
+  padding: 8vh 8%;
+  padding-bottom: 0;
   color: var(--white);
+}
+.img-wrapper{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.demo-image{
+ width: 30rem;
 }
 
 .message-form {
   flex: 1;
-  padding: 8vh 10%;
+  padding: 8vh 8%;
   color: var(--dark-grey);
 }
 
@@ -181,11 +191,36 @@ footer a {
   .main-section {
     flex-direction: column;
   }
+  .description{
+    padding: 5vh 7%;
+    padding-bottom: 1px;
+  }
+
+  .description h1{
+    font-size:2.5rem;
+  }
+  .description p{
+    font-size:1.4rem;
+  }
+
+  .message-form{
+    padding:5vh 7%;
+  }
 }
 
 @media only screen and (max-width: 680px) {
   .form-control {
     height: 2rem !important;
+  }
+  .nav-bar{
+    padding : 0 5%;
+  }
+  .description{
+    padding: 5vh 5%;
+    padding-bottom: 1px;
+  }
+  .message-form{
+    padding:5vh 5%;
   }
 }
 

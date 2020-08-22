@@ -40,7 +40,8 @@ function MessageForm() {
 
     return (
         <div className="message-form">
-            <h2>Send Message</h2>
+            <div className="form-wrapper">
+            <h2>Send Whatsapp Message</h2>
             <p id="error">{error}</p>
             <label>Phone Number
             <PhoneInput
@@ -56,6 +57,7 @@ function MessageForm() {
                 value={message}
                 onChange={message => setMessage(message)}
             />
+            </div>
             <button onClick={handleLinkClick} className="message-btn">Send Message</button>
         </div>
     )
