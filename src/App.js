@@ -2,6 +2,7 @@ import React from 'react';
 import NavBar from './Components/NavBar';
 import Description from './Components/Description';
 import MessageForm from './Components/MessageForm';
+import Footer from './Components/Footer';
 
 function App() {
     return (
@@ -11,7 +12,7 @@ function App() {
                 <Description />
                 <MessageForm />
             </main>
-
+            <Footer/>
         </>
     )
 }

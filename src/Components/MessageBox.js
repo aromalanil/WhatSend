@@ -1,21 +1,14 @@
 import React from 'react'
 
-function MessageBox({ name, placeholder, value, onChange,setError }) {
-
-    let error= '';
-
-    if(value.length>250){
-        error='Message can only contain upto 250 characters';
-        setError(error);
-    }
+function MessageBox({ name, placeholder, value, onChange }) {
 
     let handleMessageChange = e => {
         onChange(e.target.value);
     }
 
     return (
-        <label>{name}
-            <textarea className={`message-box ${error && `msg-error`}`}
+        <label id="message-box-label">{name}
+            <textarea className={"message-box"}
                 value={value}
                 name={name}
                 id={name}

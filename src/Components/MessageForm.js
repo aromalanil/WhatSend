@@ -2,28 +2,46 @@ import React, { useState } from 'react';
 import PhoneInput from 'react-phone-input-2';
 import MessageBox from '../Components/MessageBox'
 import 'react-phone-input-2/lib/bootstrap.css';
-import urlencode from 'urlencode'
+import urlencode from 'urlencode';
 
 function MessageForm() {
 
     const [phoneNumber, setPhoneNumber] = useState('');
     const [message, setMessage] = useState('');
     let [error, setError] = useState('');
-    let link = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${urlencode(message)}`;
+    let link = `https://api.whatsapp.com/send?phone=${phoneNumber}${message && `&text=${urlencode(message)}`}`;
 
     let handleLinkClick = () => {
-        if (validatePhoneNumber(phoneNumber)) {
-            setError('')
+        if(validatePhoneNumber() && validateMessage()){
             window.location.assign(link);
         }
-        else {
-            setError('Invalid phone number');
+    }
+
+    let validatePhoneNumber =() => {
+        
+        if(phoneNumber.match(/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/)){
+            return true;
+        }
+        else{
+            setError("Invalid Phone Number");
+            return false;
         }
     }
+
+    let validateMessage=()=>{
+        if(message.length<250){
+            return true;
+        }
+        else{
+            setError("Message can contain only upto 250 characters");
+            return false;
+        }
+    }
+
     return (
         <div className="message-form">
             <h2>Send Message</h2>
-            {error && <p>{error}</p>}
+            <p id="error">{error}</p>
             <label>Phone Number
             <PhoneInput
                     country={'in'}
@@ -37,15 +55,12 @@ function MessageForm() {
                 placeholder="Message (Optional)"
                 value={message}
                 onChange={message => setMessage(message)}
-                setError={setError}
             />
             <button onClick={handleLinkClick} className="message-btn">Send Message</button>
         </div>
     )
 }
 
-let validatePhoneNumber = number => {
-    return true;
-}
+
 
 export default MessageForm;
