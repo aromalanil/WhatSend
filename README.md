@@ -1,9 +1,8 @@
 <div align="center">
 <img src="https://whatsend.netlify.app/demo_img.webp" />
 <h1>WhatSend 📬</h1>
-<hr/>
 <p>Send whatspp messages to anyone without saving contact<p/>
-<br/>
+<hr/>
 </div>
 
 ## ℹ About
