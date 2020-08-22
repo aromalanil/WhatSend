@@ -1,0 +1,13 @@
+:root{
+    --lightest-green:#DCF8C6;
+    --light-green:#25D366;
+    --green:#1EBEA5;
+    --dark-green:#075E54;
+    --blue:#34B7F1;
+    --light-accent:#ECE5DD;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image:url('./img/whatsapp_background.webp')
+}
