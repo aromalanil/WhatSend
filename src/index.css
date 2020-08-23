@@ -200,7 +200,6 @@ footer a {
     flex-direction: column;
   }
   .description{
-    min-height: calc(100vh - var(--nav-height));
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -216,7 +215,6 @@ footer a {
     font-size:1.4rem;
   }
   .message-form{
-    min-height: calc(100vh - var(--nav-height));
     padding:5vh 7%;
   }
 }
