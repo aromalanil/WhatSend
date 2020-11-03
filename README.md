@@ -1,13 +1,23 @@
+
 <div align="center">
 <img src="https://whatsend.netlify.app/demo_img.webp" />
 <h1>WhatSend 📬</h1>
-<p>Send whatspp messages to anyone without saving contact<p/>
-<hr/>
+<p>Send whatspp messages to anyone without saving contact<p/><br/>
+<a href="https://github.com/aromalanil/WhatSend/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/aromalanil/WhatSend?style=for-the-badge"></a>&nbsp;&nbsp;
+<a href="https://github.com/aromalanil/WhatSend/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/aromalanil/WhatSend?style=for-the-badge"></a>&nbsp;&nbsp;
+<a href="https://github.com/aromalanil/WhatSend/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/aromalanil/WhatSend?style=for-the-badge"></a>&nbsp;&nbsp;
+<a href="https://github.com/aromalanil/WhatSend"><img alt="GitHub stars" src="https://img.shields.io/github/repo-size/aromalanil/whatsend?style=for-the-badge"></a>&nbsp;&nbsp;
+<a href="https://github.com/aromalanil/WhatSend/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/aromalanil/WhatSend?style=for-the-badge"></a><br/>
+<a href="https://app.netlify.com/sites/whatsend/deploys"><img alt="Netlify Build" src="https://api.netlify.com/api/v1/badges/ceadcba9-7d25-4abf-908b-d188a5801d5d/deploy-status"></a>
 </div>
+
+<br/>
 
 ## ℹ About
 
 WhatSend is a Progressive web app made using React.js, which lets you send WhatsApp messages to anyone without saving their number to your contact.
+
+<br/>
 
 ## ⭐ Features
 
@@ -15,9 +25,13 @@ WhatSend is a Progressive web app made using React.js, which lets you send Whats
 - ✅ Easily select the phone number📞.
 - ✅ Simple UI 📱.
 
+<br/>
+
 ## 🎆Wanna Try it out?
 
 Visit [WhatSend](https://whatsend.netlify.app/)
+
+<br/>
 
 ## License
 
