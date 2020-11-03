@@ -11,7 +11,7 @@
   --light-grey: #27344367;
   --darkest-grey: #232f3c;
   --nav-height: 8rem;
-  --font: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 html {
   font-size: 10px;
@@ -24,7 +24,7 @@ body {
   margin: 0;
   font-family: var(--font);
   background-size: 600px 1102px;
-  background-image: url("./img/whatsapp_background.webp");
+  background-image: url('./img/whatsapp_background.webp');
 }
 
 a {
@@ -96,26 +96,26 @@ label {
   padding-bottom: 0;
   color: var(--white);
 }
-.img-wrapper{
+.img-wrapper {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.demo-image{
- width: 30rem;
+.demo-image {
+  width: 30rem;
 }
 
 .message-form {
- display: flex;
- align-items: center;
- justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex: 1;
   padding: 8vh 8%;
   color: var(--dark-grey);
 }
 
-.form-wrapper{
+.form-wrapper {
   width: 100%;
   height: fit-content;
 }
@@ -199,7 +199,7 @@ footer a {
   .main-section {
     flex-direction: column;
   }
-  .description{
+  .description {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -208,30 +208,33 @@ footer a {
     padding-bottom: 1px;
   }
 
-  .description h1{
-    font-size:2.5rem;
+  .description h1 {
+    font-size: 2.5rem;
   }
-  .description p{
-    font-size:1.4rem;
+  .description p {
+    font-size: 1.4rem;
   }
-  .message-form{
-    padding:5vh 7%;
+  .message-form {
+    padding: 5vh 7%;
   }
 }
 
 @media only screen and (max-width: 680px) {
+  :root {
+    --nav-height: 6rem;
+  }
   .form-control {
     height: 2rem !important;
   }
-  .nav-bar{
-    padding : 0 5%;
+  .nav-bar {
+    padding: 0 5%;
   }
-  .description{
+  .description {
     padding: 5vh 5%;
     padding-bottom: 1px;
   }
-  .message-form{
-    padding:5vh 5%;
+  .message-form {
+    padding: 5vh 5%;
   }
 }
 

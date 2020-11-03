@@ -1,4 +1,4 @@
-let appName = "WhatSend";
-let gitRepo= "https://github.com/aromalanil/send-whatsapp-message";
+let appName = 'WhatSend';
+let gitRepo = 'https://github.com/aromalanil/send-whatsapp-message';
 
-export {appName,gitRepo}
+export { appName, gitRepo };

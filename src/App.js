@@ -4,17 +4,21 @@ import Description from './Components/Description';
 import MessageForm from './Components/MessageForm';
 import Footer from './Components/Footer';
 
+import useDesktop from './Hooks/useDesktop';
+
 function App() {
-    return (
-        <>
-            <NavBar />
-            <main className="main-section">
-                <Description />
-                <MessageForm />
-            </main>
-            <Footer/>
-        </>
-    )
+  const isDesktop = useDesktop();
+
+  return (
+    <>
+      <NavBar />
+      <main className="main-section">
+        {isDesktop && <Description />}
+        <MessageForm />
+      </main>
+      <Footer />
+    </>
+  );
 }
 
-export default App
+export default App;
