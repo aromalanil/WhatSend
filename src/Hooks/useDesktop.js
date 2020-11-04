@@ -6,7 +6,7 @@ import { useState, useEffect } from 'react';
  *
  * @param {number} width Width of the device
  */
-const getIsDesktop = (width) => width > 992;
+const getIsDesktop = (width) => width > 950;
 
 /**
  *
