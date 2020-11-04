@@ -1,6 +1,6 @@
 import React from 'react';
 
-function MessageBox({ name, placeholder, value, onChange }) {
+function MessageBox({ name, placeholder, value, onChange, small }) {
   let handleMessageChange = (e) => {
     onChange(e.target.value);
   };
@@ -9,7 +9,7 @@ function MessageBox({ name, placeholder, value, onChange }) {
     <label id="message-box-label">
       {name}
       <textarea
-        className={'message-box'}
+        className={`message-box ${small ? 'small-box' : ''}`}
         value={value}
         name={name}
         id={name}

@@ -21,6 +21,7 @@ WhatSend is a Progressive web app made using React.js, which lets you send Whats
 
 ## ⭐ Features
 
+- ✅ Broadcasting Option 📢.
 - ✅ Works offline🚫.
 - ✅ Easily select the phone number📞.
 - ✅ Simple UI 📱.
