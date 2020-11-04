@@ -6,8 +6,8 @@
   --lightest-green: #dcf8c6;
   --light-green: #25d366;
   --green: #1ebea5;
+  --green-accent: #1eaa95;
   --dark-green: #075e54;
-  --darker-green: #06463e;
   --blue: #34b7f1;
   --light-accent: #ece5dd;
   --white: #fff;
@@ -126,20 +126,22 @@ label {
   display: flex;
 }
 .tab-item {
+  text-transform: uppercase;
   user-select: none;
-  color: var(--light-accent);
-  background-color: var(--dark-green);
+  color: #fcfcfcd7;
+  background-color: var(--green);
   cursor: pointer;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.4rem;
-  font-weight: 400;
-  padding: 2rem 0;
+  font-weight: 500;
+  padding: 2.3rem 0;
 }
 .active-tab {
-  background-color: var(--darker-green);
+  color: white;
+  background-color: var(--green-accent);
   position: relative;
 }
 .active-tab::after {
@@ -149,7 +151,7 @@ label {
   left: 0;
   right: 0;
   height: 0.3rem;
-  background-color: var(--green);
+  background-color: white;
 }
 
 .form-wrapper {
