@@ -17,13 +17,10 @@ function BroadcastMessage() {
       if (phoneNumbers.trim() === '') throw new Error('Phone Numbers cannot be empty');
       if (message.trim() === '') setError('Message cannot be empty');
 
-      const tempArray = [...phoneNumbers.trim().split(',')];
+      const tempArray = getPhoneNumberArray(phoneNumbers);
       setPhoneNumberArray(tempArray);
-      if (!validatePhoneNumbers(tempArray)) {
-        throw new Error('Invalid Phone Numbers');
-      } else {
-        setStartMessaging(true);
-      }
+
+      setStartMessaging(true);
     } catch (e) {
       setError(e.message);
     }
@@ -59,10 +56,18 @@ function BroadcastMessage() {
   );
 }
 
-const validatePhoneNumbers = (phoneNumberArray) => {
-  return phoneNumberArray.every((phoneNumber) => {
+const getPhoneNumberArray = (phoneNumbers) => {
+  let phoneNumbersArray = phoneNumbers.split(',').map((number) => {
+    const phoneNumber = number.replace(/^\s+|\s+$/g, '');
     // eslint-disable-next-line
-    return !!phoneNumber.match(/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/);
+    if (!!phoneNumber.match(/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/)) {
+      return phoneNumber;
+    } else {
+      throw new Error('Invalid Phone Numbers');
+    }
   });
+
+  return phoneNumbersArray;
 };
+
 export default BroadcastMessage;
