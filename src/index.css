@@ -125,7 +125,7 @@ label {
 .description {
   width: 50%;
   background-color: var(--dark-grey);
-  padding: 6rem;
+  padding:  6rem 5%;
   padding-bottom: 0;
   color: var(--white);
 }
@@ -318,6 +318,11 @@ label {
   height: 100%;
 }
 
+.dark .overlay{
+  background-color: #000;
+  opacity: .65;
+}
+
 .alert {
   position: fixed;
   background-color: white;
@@ -332,6 +337,9 @@ label {
   width: 400px;
   box-shadow: 0 17px 50px 0 rgba(0, 0, 0, 0.19), 0 12px 15px 0 rgba(0, 0, 0, 0.24);
   z-index: 999;
+}
+.dark .alert{
+  background-color: #3B4042;
 }
 .alert h3 {
   font-size: 2rem;
@@ -352,6 +360,10 @@ label {
   text-transform: uppercase;
   color: var(--light-green);
 }
+.dark .alert-btn{
+  opacity: 1;
+  color: #00AF9D;
+}
 .alert-btn:active {
   filter: brightness(1.1);
 }
@@ -364,6 +376,10 @@ label {
   border-radius: 3px;
   color: white;
   background-color: var(--light-green);
+}
+.dark .primary{
+  color:black;
+  background-color: #00AF9D;
 }
 
 footer {
