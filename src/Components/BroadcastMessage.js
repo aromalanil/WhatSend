@@ -15,7 +15,7 @@ function BroadcastMessage() {
     setError('');
     try {
       if (phoneNumbers.trim() === '') throw new Error('Phone Numbers cannot be empty');
-      if (message.trim() === '') setError('Message cannot be empty');
+      if (message.trim() === '') throw new Error('Message cannot be empty');
 
       setPhoneNumberArray(getPhoneNumberArray(phoneNumbers));
 
