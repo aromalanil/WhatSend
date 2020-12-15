@@ -1,6 +1,6 @@
 
 <div align="center">
-<img src="https://whatsend.netlify.app/demo.png" />
+<img src="https://whatsend.live/demo.png" />
 <h1>WhatSend 📬</h1>
 <p>Send whatspp messages to anyone without saving contact<p/><br/>
 <a href="https://github.com/aromalanil/WhatSend/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/aromalanil/WhatSend?style=for-the-badge"></a>&nbsp;&nbsp;
@@ -30,7 +30,7 @@ WhatSend is a Progressive web app made using React.js, which lets you send Whats
 
 ## 🎆Wanna Try it out?
 
-Visit [WhatSend](https://whatsend.netlify.app/)
+Visit [WhatSend](https://whatsend.live/)
 
 <br/>
 
