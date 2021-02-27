@@ -6,7 +6,7 @@ function Footer() {
     <footer>
       <p>
         Copyright &copy; {new Date().getFullYear()} &nbsp;
-        <a target="_blank" rel="noopener noreferrer" href="https://aromalanil.me/">
+        <a target="_blank" rel="noopener noreferrer" href="https://aromalanil.tech/">
           Aromal Anil
         </a>
         &nbsp; |&nbsp;{' '}

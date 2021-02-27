@@ -62,4 +62,4 @@ SOFTWARE.
 
 ## ✍🏻 Author
 
-[Aromal Anil](https://aromalanil.me)
+[Aromal Anil](https://aromalanil.tech)
