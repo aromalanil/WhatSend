@@ -13,7 +13,7 @@ function Description() {
         </p>
         <p>
           But what if you don't want a person in your contact but still want to send a message to
-          him ?
+          him/her?
         </p>
         <p>
           And that's where {appName} comes in. Just fill the fields and press "Send Message" button.
