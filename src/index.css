@@ -15,7 +15,7 @@
   --light-grey: #27344367;
   --darkest-grey: #232f3c;
   --nav-height: 8rem;
-  --font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --font: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 html {
   font-size: 10px;
@@ -27,7 +27,7 @@ body {
   margin: 0;
   font-family: var(--font);
   background-size: 600px 1102px;
-  background-image: url('./img/whatsapp_background.webp');
+  background-image: url("./img/whatsapp_background.webp");
 }
 body * {
   transition: 0.3s ease;
@@ -41,7 +41,7 @@ body.dark {
   --dark-mode-white: #e1e2e3;
   --dark-mode-dull-white: #b4b4b4;
   background-size: 400px 680px;
-  background-image: url('./img/whatsapp_background_dark.webp');
+  background-image: url("./img/whatsapp_background_dark.webp");
 }
 
 a {
@@ -102,14 +102,14 @@ label {
   font-weight: 500;
 }
 
-.nav-links{
+.nav-links {
   display: flex;
   gap: 1.5rem;
 }
-.theme-toggle{
+.theme-toggle {
   cursor: pointer;
 }
-.theme-icon{
+.theme-icon {
   height: 3.2rem;
 }
 
@@ -125,7 +125,7 @@ label {
 .description {
   width: 50%;
   background-color: var(--dark-grey);
-  padding:  6rem 5%;
+  padding: 6rem 5%;
   padding-bottom: 0;
   color: var(--white);
 }
@@ -192,7 +192,7 @@ label {
 }
 
 .active-tab::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -288,7 +288,7 @@ label {
   background-color: #262d31 !important;
   color: var(--dark-mode-white) !important;
 }
-.dark .dial-code{
+.dark .dial-code {
   color: var(--dark-mode-white) !important;
 }
 
@@ -318,9 +318,9 @@ label {
   height: 100%;
 }
 
-.dark .overlay{
+.dark .overlay {
   background-color: #000;
-  opacity: .65;
+  opacity: 0.65;
 }
 
 .alert {
@@ -335,11 +335,12 @@ label {
   transform: translate(-50%, -50%);
   height: fit-content;
   width: 400px;
-  box-shadow: 0 17px 50px 0 rgba(0, 0, 0, 0.19), 0 12px 15px 0 rgba(0, 0, 0, 0.24);
+  box-shadow: 0 17px 50px 0 rgba(0, 0, 0, 0.19),
+    0 12px 15px 0 rgba(0, 0, 0, 0.24);
   z-index: 999;
 }
-.dark .alert{
-  background-color: #3B4042;
+.dark .alert {
+  background-color: #3b4042;
 }
 .alert h3 {
   font-size: 2rem;
@@ -360,9 +361,9 @@ label {
   text-transform: uppercase;
   color: var(--light-green);
 }
-.dark .alert-btn{
+.dark .alert-btn {
   opacity: 1;
-  color: #00AF9D;
+  color: #00af9d;
 }
 .alert-btn:active {
   filter: brightness(1.1);
@@ -377,26 +378,27 @@ label {
   color: white;
   background-color: var(--light-green);
 }
-.dark .primary{
-  color:black;
-  background-color: #00AF9D;
+.dark .primary {
+  color: black;
+  background-color: #00af9d;
 }
 
 footer {
   position: relative;
   z-index: 997;
-  background-color: var(--darkest-grey);
+  background-color: var(--green);
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--white);
 }
-.dark footer{
+.dark footer {
   background-color: var(--dark-mode-grey-dark);
-  color:var(--dark-mode-white)
+  color: var(--dark-mode-white);
 }
 footer a {
-  color: var(--green);
+  font-weight: 500;
+  color: var(--dark-green);
 }
 
 @media only screen and (min-width: 950px) {
