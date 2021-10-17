@@ -1,7 +1,7 @@
 {
   "extends": ["react-app", "react-app/jest", "airbnb", "airbnb/hooks", "prettier"],
   "plugins": ["prettier"],
-  "ignorePatterns": ["node_modules", "src/serviceWorker.js"],
+  "ignorePatterns": ["node_modules"],
   "rules": {
     "func-names": "off",
     "no-console": "warn",
@@ -9,7 +9,7 @@
     "prettier/prettier": "error",
     "react/react-in-jsx-scope": "off",
     "import/prefer-default-export": "off",
-    "jsx-a11y/label-has-associated-control":"off",
+    "jsx-a11y/label-has-associated-control": "off",
     "jsx-a11y/click-events-have-key-events": "off"
   }
 }
