@@ -1,15 +1,14 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import PhoneInput from 'react-phone-input-2';
 import MessageBox from './MessageBox';
 import 'react-phone-input-2/lib/bootstrap.css';
-import urlencode from 'urlencode';
 
 function MessageForm() {
   const [phoneNumber, setPhoneNumber] = useState('');
   const [message, setMessage] = useState('');
   const [error, setError] = useState('');
   let link = `https://api.whatsapp.com/send?phone=${phoneNumber}${
-    message && `&text=${urlencode(message)}`
+    message && `&text=${encodeURIComponent(message)}`
   }`;
 
   let handleLinkClick = () => {

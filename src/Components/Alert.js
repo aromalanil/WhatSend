@@ -1,5 +1,3 @@
-import React from 'react';
-
 function Alert({ title, message, onCancel, onCancelAll, onConfirm }) {
   return (
     <>

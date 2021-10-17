@@ -1,4 +1,3 @@
-import React from 'react';
 import logo from '../img/logo.svg';
 import github_logo from '../img/github_logo.svg';
 import Logo from './Logo';

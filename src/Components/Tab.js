@@ -1,5 +1,3 @@
-import React from 'react';
-
 function Tab({ activeTab, tabValues, setActiveTab }) {
   return (
     <div className="tab">

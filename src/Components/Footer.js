@@ -1,4 +1,3 @@
-import React from 'react';
 import { gitRepo } from '../constants';
 
 function Footer() {

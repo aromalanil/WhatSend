@@ -1,4 +1,3 @@
-import React from 'react';
 import sunImage from '../img/sun.svg';
 import moonImage from '../img/moon.svg';
 
