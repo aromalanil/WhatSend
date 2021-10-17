@@ -4,8 +4,11 @@ function Tab({ activeTab, tabValues, setActiveTab }) {
       {tabValues.map((value) => (
         <div
           key={value}
+          role="button"
+          tabIndex={0}
           className={`tab-item ${value === activeTab ? 'active-tab' : ''} `}
-          onClick={() => setActiveTab(value)}>
+          onClick={() => setActiveTab(value)}
+        >
           {value}
         </div>
       ))}

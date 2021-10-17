@@ -1,10 +1,10 @@
-import useDarkMode from '../Hooks/useDarkMode';
 import ThemeIcon from './ThemeIcon';
+import useDarkMode from '../hooks/useDarkMode';
 
 function DarkModeToggle() {
   const [isDarkMode, toggleDarkMode] = useDarkMode('dark');
   return (
-    <div onClick={toggleDarkMode} className="theme-toggle">
+    <div role="button" tabIndex={0} onClick={toggleDarkMode} className="theme-toggle">
       <ThemeIcon darkMode={isDarkMode} />
     </div>
   );

@@ -5,18 +5,18 @@ function Alert({ title, message, onCancel, onCancelAll, onConfirm }) {
         <h3>{title}</h3>
         <p>{message}</p>
         <div className="btn-list">
-          <button onClick={onCancel} className="alert-btn">
+          <button type="button" onClick={onCancel} className="alert-btn">
             Cancel
           </button>
-          <button onClick={onCancelAll} className="alert-btn">
+          <button type="button" onClick={onCancelAll} className="alert-btn">
             Cancel All
           </button>
-          <button onClick={onConfirm} className="alert-btn primary">
+          <button type="button" onClick={onConfirm} className="alert-btn primary">
             Confirm
           </button>
         </div>
       </div>
-      <div className="overlay"></div>
+      <div className="overlay" />
     </>
   );
 }

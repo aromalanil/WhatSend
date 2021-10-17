@@ -2,6 +2,19 @@ import { useState } from 'react';
 import MessageBox from './MessageBox';
 import MessageList from './MessageList';
 
+const getPhoneNumberArray = (phoneNumbers) => {
+  const phoneNumbersArray = phoneNumbers.split(',').map((number) => {
+    const phoneNumber = number.replace(/^\s+|\s+$/g, '');
+    // eslint-disable-next-line
+    if (!!phoneNumber.match(/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/)) {
+      return phoneNumber;
+    }
+    throw new Error('Invalid Phone Numbers');
+  });
+
+  return phoneNumbersArray;
+};
+
 function BroadcastMessage() {
   const [error, setError] = useState('');
   const [message, setMessage] = useState('');
@@ -30,21 +43,21 @@ function BroadcastMessage() {
       <h2>Send Broadcast Messages</h2>
       <p id="error">{error}</p>
       <MessageBox
-        small={true}
+        small
         name="Phone Numbers"
         placeholder="Enter all mobile numbers separated by comma"
         value={phoneNumbers}
-        onChange={(phoneNumbers) => setPhoneNumbers(phoneNumbers)}
+        onChange={(_phoneNumbers) => setPhoneNumbers(_phoneNumbers)}
       />
       <MessageBox
-        small={true}
+        small
         name="Message"
         placeholder="Message"
         value={message}
-        onChange={(message) => setMessage(message)}
+        onChange={(_message) => setMessage(_message)}
       />
 
-      <button className="message-btn" onClick={handleSendMessage}>
+      <button type="submit" className="message-btn" onClick={handleSendMessage}>
         Start Messaging
       </button>
 
@@ -54,19 +67,5 @@ function BroadcastMessage() {
     </div>
   );
 }
-
-const getPhoneNumberArray = (phoneNumbers) => {
-  let phoneNumbersArray = phoneNumbers.split(',').map((number) => {
-    const phoneNumber = number.replace(/^\s+|\s+$/g, '');
-    // eslint-disable-next-line
-    if (!!phoneNumber.match(/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/)) {
-      return phoneNumber;
-    } else {
-      throw new Error('Invalid Phone Numbers');
-    }
-  });
-
-  return phoneNumbersArray;
-};
 
 export default BroadcastMessage;
