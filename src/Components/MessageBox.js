@@ -1,5 +1,3 @@
-import React from 'react';
-
 function MessageBox({ name, placeholder, value, onChange, small }) {
   let handleMessageChange = (e) => {
     onChange(e.target.value);

@@ -1,4 +1,3 @@
-import React from 'react';
 import useDarkMode from '../Hooks/useDarkMode';
 import ThemeIcon from './ThemeIcon';
 

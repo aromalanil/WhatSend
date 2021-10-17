@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Alert from './Alert';
-import urlencode from 'urlencode';
 
 function MessageList({ stop, phoneNumbers, message }) {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -15,7 +14,7 @@ function MessageList({ stop, phoneNumbers, message }) {
     let newNumber = phoneNumber.toString().length === 10 ? `+91${phoneNumber}` : phoneNumber;
 
     const link = `https://api.whatsapp.com/send?phone=${newNumber}${
-      message && `&text=${urlencode(message)}`
+      message && `&text=${encodeURIComponent(message)}`
     }`;
     window.open(link, '_blank');
     incrementIndex();

@@ -1,4 +1,3 @@
-import React from 'react';
 import { appName } from '../constants';
 import demo from '../img/demo.webp';
 
