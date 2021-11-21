@@ -1,6 +1,6 @@
 {
   "name": "whatsend",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "private": true,
   "scripts": {
     "start": "react-scripts start",
