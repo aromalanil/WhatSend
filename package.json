@@ -17,5 +17,9 @@
     "tslib": "^2.5.0",
     "typescript": "^4.9.3",
     "vite": "^4.1.0"
+  },
+  "dependencies": {
+    "flag-icons": "^6.6.6",
+    "svelte-tel-input": "^1.2.0"
   }
 }

@@ -1,2 +1,16 @@
+<script lang="ts">
+  import isDesktop from './store/isDesktop';
+  import NavBar from './components/NavBar.svelte';
+  import Footer from './components/Footer.svelte';
+  import Description from './components/Description.svelte';
+  import MessageForm from './components/MessageForm.svelte';
+</script>
 
-<h1>Whatsent</h1>
+<NavBar />
+<main class="main-section">
+  {#if $isDesktop}
+    <Description />
+  {/if}
+  <MessageForm />
+</main>
+<Footer />
