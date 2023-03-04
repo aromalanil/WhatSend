@@ -3,8 +3,6 @@
   import type { CountryCode } from 'svelte-tel-input/types';
 
   export let countryCode: CountryCode;
-
-  $: lowerCaseCountryCode = countryCode.toLocaleLowerCase();
 </script>
 
-<span class="fi fi-{lowerCaseCountryCode}" />
+<span class="fi fi-{countryCode.toLocaleLowerCase()}" />

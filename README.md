@@ -1,6 +1,6 @@
 
 <div align="center">
-<img src="https://whatsend.netlify.app/images/demo.png" />
+<img src="https://whatsend.netlify.app/assets/images/demo.png" />
 <h1>WhatSend 📬</h1>
 <p>Send whatspp messages to anyone without saving contact<p/><br/>
 <a href="https://github.com/aromalanil/WhatSend/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/aromalanil/WhatSend?style=for-the-badge"></a>&nbsp;&nbsp;
@@ -13,13 +13,12 @@
 
 <br/>
 
-> #### ⚠️ Domain change
-Whatsend will be no longer available on the domain [whatsend.live](https://whatsend.live), you can continue accessing Whatsend on [whatsend.netlify.app](https://whatsend.netlify.app)
-
 
 ## ℹ About
 
-WhatSend is a Progressive web app made using React.js, which lets you send WhatsApp messages to anyone without saving their number to your contact.
+WhatSend is a Progressive web app made using Svelte, which lets you send WhatsApp messages to anyone without saving their number to your contact.
+
+> Legacy version was made using React. Checkout the code [here](https://github.com/aromalanil/WhatSend/tree/v2-legacy-react)
 
 <br/>
 

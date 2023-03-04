@@ -1,6 +1,6 @@
 <script lang="ts">
   import MessageBox from './MessageBox.svelte';
-  import PhoneInput from './PhoneInput.svelte';
+  import PhoneInput from './PhoneInput/index.svelte';
 
   let error = '';
   let message = '';
@@ -20,12 +20,17 @@
       error = 'Please enter Phone Number';
       return;
     }
-    if (isPhoneValid && validateMessage()) {
-      const link = `https://api.whatsapp.com/send?phone=${phoneNumber}${
-        message && `&text=${encodeURIComponent(message)}`
-      }`;
-      window.location.assign(link);
+    if (!isPhoneValid) {
+      error = 'Please enter a valid phone number';
+      return;
     }
+
+    if (!validateMessage()) return;
+
+    const link = `https://api.whatsapp.com/send?phone=${phoneNumber}${
+      message ? `&text=${encodeURIComponent(message)}` : ''
+    }`;
+    window.open(link, '_blank');
   };
 </script>
 

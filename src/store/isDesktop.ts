@@ -19,7 +19,6 @@ const isDesktop = readable(getIsDesktop(window.innerWidth), (set) => {
   window.addEventListener("resize", onWindowResize);
 
   function onWindowResize() {
-    console.log(window.innerWidth);
     set(getIsDesktop(window.innerWidth))
   }
 
