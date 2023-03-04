@@ -33,7 +33,6 @@ const updateBodyClass = (className: string, action: 'add' | 'remove') => {
  */
 const createIsDarkMode = () => {
   const initialIsDarkMode = getUserPreferredMode();
-  console.log(initialIsDarkMode);
   updateBodyClass('dark', initialIsDarkMode ? 'add' : 'remove');
 
   const { subscribe, update } = writable(initialIsDarkMode);
