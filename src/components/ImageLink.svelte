@@ -7,3 +7,9 @@
 <a target="_blank" rel="noopener noreferrer" href={link}>
   <img class="image-link" src={image} {alt} />
 </a>
+
+<style>
+  .image-link {
+    height: 3.2rem;
+  }
+</style>

@@ -23,3 +23,31 @@
     <img class="demo-image" src={demo} alt="demo-img" />
   </div>
 </div>
+
+<style>
+  .description {
+    width: 50%;
+    background-color: var(--dark-grey);
+    padding: 6rem 5%;
+    padding-bottom: 0;
+    color: var(--white);
+
+    -webkit-box-shadow: 11px 0px 21px -11px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 11px 0px 21px -11px rgba(0, 0, 0, 0.4);
+    box-shadow: 11px 0px 21px -11px rgba(0, 0, 0, 0.4);
+  }
+
+  .img-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .demo-image {
+    width: 30rem;
+  }
+
+  :global(.dark) .description {
+    background-color: #131c21;
+  }
+</style>

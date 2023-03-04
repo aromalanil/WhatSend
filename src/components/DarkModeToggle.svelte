@@ -8,3 +8,12 @@
 <div role="button" tabIndex={0} on:click={() => isDarkMode.toggle()} class="theme-toggle">
   <img alt="theme-toggle-icon" class="theme-icon" src={$isDarkMode ? sunImage : moonImage} />
 </div>
+
+<style>
+  .theme-toggle {
+    cursor: pointer;
+  }
+  .theme-icon {
+    height: 3.2rem;
+  }
+</style>

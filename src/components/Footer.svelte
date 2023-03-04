@@ -12,3 +12,22 @@
     </a>
   </p>
 </footer>
+
+<style>
+  footer {
+    position: relative;
+    z-index: 997;
+    background-color: var(--darkest-grey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+  }
+  .dark footer {
+    background-color: var(--dark-mode-grey-dark);
+    color: var(--dark-mode-white);
+  }
+  footer a {
+    color: var(--green);
+  }
+</style>

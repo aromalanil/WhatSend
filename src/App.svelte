@@ -14,3 +14,16 @@
   <MessageForm />
 </main>
 <Footer />
+
+<style>
+  .main-section {
+    display: flex;
+    min-height: calc(100vh - var(--nav-height));
+  }
+
+  @media only screen and (max-width: 950px) {
+    .main-section {
+      flex-direction: column;
+    }
+  }
+</style>

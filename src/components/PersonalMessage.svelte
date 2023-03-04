@@ -1,5 +1,6 @@
 <script lang="ts">
   import MessageBox from './MessageBox.svelte';
+  import Button from './Button.svelte';
   import PhoneInput from './PhoneInput/index.svelte';
 
   let error = '';
@@ -43,5 +44,5 @@
   </label>
   <MessageBox name="Message" placeholder="Message (Optional)" bind:value={message} />
 
-  <button type="submit" on:click={sendMessage} class="message-btn"> Send Message </button>
+  <Button on:click={sendMessage} value="Send Message" />
 </div>

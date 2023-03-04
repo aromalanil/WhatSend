@@ -16,6 +16,12 @@
     bind:value
     bind:country={selectedCountry}
     bind:valid={isPhoneValid}
-    class="phone-input-text"
+    class="phone-input-text text-input"
   />
 </div>
+
+<style>
+  .phone-input {
+    display: flex;
+  }
+</style>
