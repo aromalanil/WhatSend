@@ -1,2 +1,0 @@
-# Redirecting old domain to netlify subdomain
-https://whatsend.live/* https://whatsend.netlify.app/:splat 301!
