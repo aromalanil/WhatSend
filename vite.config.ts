@@ -33,6 +33,18 @@ export default defineConfig({
       description: 'WhatSend lets you send WhatsApp message to a number without saving it in your contacts.',
       icons: [
         {
+          src: 'assets/favicon/icon-192x192 copy.png',
+          sizes: '192x192',
+          purpose: "any",
+          type: 'image/png'
+        },
+        {
+          src: 'assets/favicon/maskable_icon.png',
+          sizes: '1024x1024',
+          purpose: 'maskable',
+          type: 'image/png'
+        },
+        {
           src: 'assets/favicon/android-chrome-192x192.png',
           sizes: '192x192',
           type: 'image/png'
@@ -43,6 +55,29 @@ export default defineConfig({
           type: 'image/png'
         }
       ],
+      screenshots: [
+        {
+          src: 'assets/screenshots/1.jpg',
+          sizes: "1080x1920",
+          type: "image/jpg",
+          platform: "narrow",
+          label: "Home screen of WhatSend"
+        },
+        {
+          src: 'assets/screenshots/2.jpg',
+          sizes: "1080x1920",
+          type: "image/jpg",
+          platform: "narrow",
+          label: "Dark Mode feature of WhatSend"
+        },
+        {
+          src: 'assets/screenshots/3.jpg',
+          sizes: "1080x1920",
+          type: "image/jpg",
+          platform: "narrow",
+          label: "Broadcast of WhatSend"
+        }
+      ]
     }
   })],
   server: {
