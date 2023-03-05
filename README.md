@@ -16,55 +16,69 @@
 <br/>
 
 
-## ℹ About
+## About ℹ
 
-WhatSend is a Progressive web app made using Svelte, which lets you send WhatsApp messages to anyone without saving their number to your contact.
+WhatSend is a progressive web app (PWA) that lets you send direct WhatsApp messages to people without having to save their mobile number in your contacts. Additionally, it allows you to send messages to a list of phone numbers all at once.
+
+The app is built using Svelte, a modern JavaScript framework that offers fast performance and easy-to-read code. By using Svelte, we have ensured that the app runs smoothly and quickly, without any lag.
 
 > Legacy version was made using React. Checkout the code [here](https://github.com/aromalanil/WhatSend/tree/v2-legacy-react)
 
-<br/>
+##  Features 🎈
+- ###  BroadCasting Option 📢
+Send messages to a list of phone numbers which are not in your contact
+- ###  Works offline 🚫
+WhatSend is a PWA, which means it can be installed on your device just like a native app. Once install you don't need internet to access WhatSend. However, you **will need internet to send your message** 🙈
+- ###  Simple UI 📱
+WhatSend provides you a simple and straight forward UI which is a breeze to use
+- ###  Fast and responsive 🚀
+WhatSend is build with Svelte a modern JavaScript framework that offers fast performance. The app runs smoothly and quickly, without any lag. 
 
-## ⭐ Features
+## Installation 🔧
+WhatSend is a PWA, which means it can be installed on your device just like a native app. Follow these simple steps to install WhatSend on your device:
 
-- ✅ Broadcasting Option 📢.
-- ✅ Works offline🚫.
-- ✅ Easily select the phone number📞.
-- ✅ Simple UI 📱.
+1. Open WhatSend in your browser: https://whatsend.netlify.app. 
+1.Follow the prompts to install the app on your device
+1. Once installed, you can open WhatSend like any other app on your device
 
-<br/>
+## Development
 
-## 🎆Wanna Try it out?
+### Local
+To get started with WhatSend follow these steps
+1. Clone the repo and cd into it.
+```bash
+git clone git@github.com:aromalanil/WhatSend.git
+cd WhatSend
+```
+2. Install all the npm packages
+```bash
+npm i
+```
+3. Start the development server with hot reload.
+```bash
+npm run dev
+```
 
-Visit [WhatSend](https://whatsend.netlify.app/)
-
-<br/>
+### Production
+To setup WhatSend in production follow these steps
+1. Clone the repo into your server
+```bash
+git clone git@github.com:aromalanil/WhatSend.git
+cd WhatSend
+```
+2. Install all the npm packages
+```bash
+npm i
+```
+3. Generate the build
+```bash
+npm run build
+```
+4. The build will be generated in the `/dist` directory. Serve all static files from this directory.
 
 ## License
+WhatSend is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
 
-```
-MIT License
-
-Copyright (c) 2020 Aromal Anil
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-```
-
-## ✍🏻 Author
+## Author ✍🏻
 
 [Aromal Anil](https://aromalanil.in)
