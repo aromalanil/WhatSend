@@ -12,12 +12,24 @@ export default defineConfig({
     manifest: {
       name: 'WhatSend',
       short_name: 'WhatSend',
-
+      lang: 'en',
+      scope: '/',
       start_url: '.',
       display: 'standalone',
-      theme_color: '#075e54',
-      background_color: '#ffffff',
-      categories: ['utility', 'productivity'],
+      theme_color: '#0c5a51',
+      background_color: '#0c5a51',
+      dir: 'ltr',
+      categories: [
+        'lifestyle',
+        'productivity',
+        'utilities'
+      ],
+      orientation: 'portrait',
+      display_override: [
+        'window-controls-overlay',
+        'standalone',
+        'browser'
+      ],
       description: 'WhatSend lets you send WhatsApp message to a number without saving it in your contacts.',
       icons: [
         {

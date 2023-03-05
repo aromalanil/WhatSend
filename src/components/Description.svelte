@@ -5,18 +5,15 @@
 
 <div class="description">
   <div class="content">
-    <h1>Whats is {appName} ?</h1>
+    <h1>Introducing {appName} 🎉</h1>
     <p>
-      Whatsapp only let&apos;s you make calls or send messages to the numbers present in your
-      contact.
+      The revolutionary webapp that lets you reach out to anyone, even if they're not in your contact list.
     </p>
     <p>
-      But what if you don&apos;t want a person in your contact but still want to send a message to
-      him/her?
+      Say goodbye to the hassle of adding someone to your contacts just to send them a message. With {appName}, you can simply enter their phone number/numbers, compose your message, and hit send!
     </p>
     <p>
-      And that&apos;s where {appName} comes in. Just fill the fields and press &quot;Send Message&quot;
-      button.
+      So why wait? Give it a try and start sending messages like a pro!
     </p>
   </div>
   <div class="img-wrapper">
