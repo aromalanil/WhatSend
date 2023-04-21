@@ -9,6 +9,9 @@
     &nbsp; |&nbsp;{' '}
     <a href={`${gitRepo}/blob/master/LICENSE`} target="_blank" rel="noopener noreferrer">
       MIT License
+    </a>|&nbsp;
+    <a href={`/privacy-policy`} target="_blank" rel="noopener noreferrer">
+     Privacy Policy
     </a>
   </p>
 </footer>
