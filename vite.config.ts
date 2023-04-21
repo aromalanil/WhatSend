@@ -57,23 +57,23 @@ export default defineConfig({
       ],
       screenshots: [
         {
-          src: 'assets/screenshots/1.jpg',
+          src: 'assets/screenshots/1.png',
           sizes: "1080x1920",
-          type: "image/jpg",
+          type: "image/png",
           platform: "narrow",
           label: "Home screen of WhatSend"
         },
         {
-          src: 'assets/screenshots/2.jpg',
+          src: 'assets/screenshots/2.png',
           sizes: "1080x1920",
-          type: "image/jpg",
+          type: "image/png",
           platform: "narrow",
           label: "Dark Mode feature of WhatSend"
         },
         {
-          src: 'assets/screenshots/3.jpg',
+          src: 'assets/screenshots/3.png',
           sizes: "1080x1920",
-          type: "image/jpg",
+          type: "image/png",
           platform: "narrow",
           label: "Broadcast of WhatSend"
         }

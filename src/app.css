@@ -441,6 +441,7 @@ label {
 }
 
 footer {
+  padding: 0 10%;
   position: relative;
   z-index: 997;
   background-color: var(--darkest-grey);
@@ -448,6 +449,9 @@ footer {
   align-items: center;
   justify-content: center;
   color: var(--white);
+}
+footer p {
+  text-align: center;
 }
 .dark footer {
   background-color: var(--dark-mode-grey-dark);
