@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="theme-color" content="#075e54" />
+		<meta
+			name="description"
+			content="WhatSend let's you send whatsapp message to a number without saving it in your contacts."
+		/>
+
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="%sveltekit.assets%/assets/favicon/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="%sveltekit.assets%/assets/favicon/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="%sveltekit.assets%/assets/favicon/favicon-16x16.png"
+		/>
+		<link
+			rel="mask-icon"
+			href="%sveltekit.assets%/assets/favicon/safari-pinned-tab.svg"
+			color="#4ecc5c"
+		/>
+		<link rel="shortcut icon" href="%sveltekit.assets%/assets/favicon/favicon.ico" />
+		<meta name="msapplication-TileColor" content="#4ecc5c" />
+		<meta
+			name="msapplication-config"
+			content="%sveltekit.assets%/assets/favicon/browserconfig.xml"
+		/>
+		<meta name="theme-color" content="#0c5a51" />
+
+		<!-- SEO Metatags -->
+		<!-- Primary Meta Tags -->
+		<title>WhatSend</title>
+		<meta name="title" content="WhatSend" />
+		<meta
+			name="description"
+			content="WhatSend lets you send WhatsApp message to a number without saving it in your contacts."
+		/>
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://whatsend.netlify.app/" />
+		<meta property="og:title" content="WhatSend" />
+		<meta
+			property="og:description"
+			content="WhatSend lets you send WhatsApp message to a number without saving it in your contacts."
+		/>
+		<meta property="og:image" content="https://whatsend.netlify.app/assets/images/demo.png" />
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content="https://whatsend.netlify.app/" />
+		<meta property="twitter:title" content="WhatSend" />
+		<meta
+			property="twitter:description"
+			content="WhatSend lets you send WhatsApp message to a number without saving it in your contacts."
+		/>
+
+		<meta property="twitter:image" content="https://whatsend.netlify.app/assets/images/demo.png" />
+		<title>WhatSend</title>
+
+		<!-- Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-L9J889SXSJ"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag('js', new Date());
+
+			gtag('config', 'G-L9J889SXSJ');
+		</script>
+		%sveltekit.head%
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">%sveltekit.body%</div>
+	</body>
+</html>
