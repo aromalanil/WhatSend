@@ -1,0 +1,13 @@
+[
+	{
+		"relation": ["delegate_permission/common.handle_all_urls"],
+		"target": {
+			"namespace": "android_app",
+			"package_name": "in.aromalanil.whatsend.twa",
+			"sha256_cert_fingerprints": [
+				"9B:E5:C3:31:1E:23:4D:A1:E5:57:2E:75:07:3C:7E:C6:09:DB:90:DC:83:4E:F6:11:99:29:AF:68:2A:93:00:8D",
+				"E6:4B:41:1F:0C:69:95:13:55:D5:10:C3:DD:3B:2A:6B:DA:95:36:50:3F:BC:FC:E6:A1:92:26:1C:59:4E:98:CE"
+			]
+		}
+	}
+]
