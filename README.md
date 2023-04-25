@@ -1,5 +1,5 @@
 <div align="center">
-<img width="70" src="public/assets/favicon/android-chrome-512x512.png" alt="logo"/>
+<img width="70" src="static/assets/favicon/icon-192x192.png" alt="logo"/>
 <h1>WhatSend</h1>
 <p>Send Whatsapp messages to anyone without saving contact<p/><br/>
 <a href="https://github.com/aromalanil/WhatSend/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/aromalanil/WhatSend?style=for-the-badge"></a>&nbsp;&nbsp;
