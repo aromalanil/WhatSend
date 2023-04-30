@@ -496,11 +496,11 @@ footer a {
 	}
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 404px) {
 	html {
 		font-size: 2.5vw;
 	}
 	.alert-btn {
-		font-size: 1.3rem;
+		font-size: 1.28rem;
 	}
 }

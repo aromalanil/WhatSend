@@ -75,7 +75,7 @@
 
 	main,
 	header {
-		padding: 0 10rem;
+		padding: 0 10%;
 	}
 
 	h1,
