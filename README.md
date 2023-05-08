@@ -14,9 +14,13 @@
 
 <br/>
 
+## Download ⏬
+
+<a href='https://play.google.com/store/apps/details?id=in.aromalanil.whatsend.twa&utm_source=Github&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
+
 ## About ℹ
 
-WhatSend is a progressive web app (PWA) that lets you send direct WhatsApp messages to people without having to save their mobile number in your contacts. Additionally, it allows you to send messages to a list of phone numbers all at once.
+WhatSend is a progressive web app (PWA) that lets you send direct WhatsApp messages to people without having to save their mobile number in your 0contacts. Additionally, it allows you to send messages to a list of phone numbers all at once.
 
 The app is built using Svelte, a modern JavaScript framework that offers fast performance and easy-to-read code. By using Svelte, we have ensured that the app runs smoothly and quickly, without any lag.
 
