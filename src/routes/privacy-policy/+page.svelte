@@ -55,7 +55,7 @@
 	<h2>Contact Us:</h2>
 	<p>
 		If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us
-		at <a href="mailto:aromalanilkanna@gmail.com">Email ✉</a>.
+		at <a href="mailto:hi@aromalanil.in">Email ✉</a>.
 	</p>
 </main>
 
