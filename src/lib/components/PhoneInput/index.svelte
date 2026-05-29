@@ -10,7 +10,7 @@
 </script>
 
 <div class="phone-input">
-	<SelectCountry selectedCountryCode={selectedCountry} />
+	<SelectCountry bind:selectedCountryCode={selectedCountry} />
 
 	<TelInput
 		bind:value

@@ -23,7 +23,7 @@
 		const newNumber = phoneNumber.toString().length === 10 ? `+91${phoneNumber}` : phoneNumber;
 
 		const link = `https://api.whatsapp.com/send?phone=${newNumber}${
-			message && `&text=${encodeURIComponent(message)}`
+			message ? `&text=${encodeURIComponent(message)}` : ''
 		}`;
 		window.open(link, '_blank');
 		incrementIndex();

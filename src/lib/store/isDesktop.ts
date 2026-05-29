@@ -26,7 +26,7 @@ const isDesktop = readable(getIsDesktop(), (set) => {
 		window.addEventListener('resize', onWindowResize);
 
 		return () => {
-			window.removeEventListener('mousemove', onWindowResize);
+			window.removeEventListener('resize', onWindowResize);
 		};
 	}
 });

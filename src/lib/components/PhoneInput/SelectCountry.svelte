@@ -6,7 +6,7 @@
 	export let selectedCountryCode: CountryCode = 'IN';
 
 	let isDropDownVisible = false;
-	$: selectedCountry = normalizedCountries.find((country) => country.iso2 === selectedCountryCode);
+	$: selectedCountry = normalizedCountries.find((country) => country.iso2 === selectedCountryCode) || normalizedCountries[0];
 
 	const selectCountry = (countryCode: CountryCode) => {
 		isDropDownVisible = false;
