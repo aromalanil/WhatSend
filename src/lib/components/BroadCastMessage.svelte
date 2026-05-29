@@ -48,3 +48,5 @@
 		<MessageList on:stop={stopMessaging} phoneNumbers={phoneNumberArray} {message} />
 	{/if}
 </div>
+
+

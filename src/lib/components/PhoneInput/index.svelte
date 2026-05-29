@@ -19,3 +19,35 @@
 		class="phone-input-text"
 	/>
 </div>
+
+<style>
+	.phone-input {
+		display: flex;
+	}
+	.phone-input :global(.phone-input-text) {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		width: 100%;
+		border: 1px solid #cacaca;
+		border-radius: 5px;
+		padding: 1.8rem;
+		font-size: 1.6rem;
+		margin-bottom: 2.5rem;
+	}
+	:global(body.dark) .phone-input :global(.phone-input-text) {
+		color: var(--dark-mode-white);
+		background-color: #262d31;
+		border-color: #434f55;
+	}
+	.phone-input :global(.phone-input-text:focus) {
+		outline: none;
+		border-color: var(--light-grey) !important;
+		box-shadow: 0 0 0 0.2rem var(--light-grey) !important;
+		transition: box-shadow ease 0.25s, border-color ease 0.25s;
+	}
+	:global(body.dark) .phone-input :global(.phone-input-text:focus) {
+		border-color: #434f55 !important;
+		box-shadow: 0 0 0 0.2rem #434f55 !important;
+	}
+</style>
