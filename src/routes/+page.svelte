@@ -7,19 +7,26 @@
 	import '../app.css';
 </script>
 
-<NavBar />
-<main class="main-section">
-	{#if $isDesktop}
-		<Description />
-	{/if}
-	<MessageForm />
-</main>
-<Footer />
+<div class="page-container">
+	<NavBar />
+	<main class="main-section">
+		{#if $isDesktop}
+			<Description />
+		{/if}
+		<MessageForm />
+	</main>
+	<Footer />
+</div>
 
 <style>
+	.page-container {
+		display: flex;
+		flex-direction: column;
+		min-height: 100vh;
+	}
 	.main-section {
 		display: flex;
-		min-height: calc(100vh - var(--nav-height));
+		flex: 1;
 	}
 	@media only screen and (max-width: 950px) {
 		.main-section {
